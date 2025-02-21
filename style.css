@@ -1,13 +1,15 @@
-body { 
-    font-family: Arial, sans-serif;
+/* 🌟 Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     transition: background-color 0.5s ease;
 }
 
+/* 🌈 Navbar */
 .navbar {
     background-color: #6C63FF;
     padding: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .navbar a {
@@ -20,26 +22,28 @@ body {
     transition: color 0.3s ease;
 }
 
+/* 💫 Hero Section */
 .hero {
     background: linear-gradient(135deg, #6C63FF, #FF5E78);
     color: white;
     padding: 80px 0;
     text-align: center;
     animation: fadeIn 2s ease-out;
-    margin-top: 70px; 
+    margin-top: 70px;
 }
 
 .hero-title {
-    font-size: 4rem; 
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
-    animation: fadeInUp 1.5s ease-out;
-    display: inline-block;
+    animation: typing 4s steps(40) 1s forwards, fadeInUp 1.5s ease-out;
+    overflow: hidden;
     white-space: nowrap;
+    border-right: 4px solid #fff;
 }
 
 .hero-subtitle {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-bottom: 30px;
     animation: fadeInUp 1.7s ease-out;
 }
@@ -57,40 +61,19 @@ body {
     background-color: #FF5E78;
 }
 
-/* Typing Effect for Hero Title */
+/* 🎬 Typing Effect */
 @keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-.hero-title {
-    animation: typing 4s steps(40) 1s forwards, fadeInUp 1.5s ease-out;
-    overflow: hidden;
-    border-right: 4px solid #fff; /* Cursor effect */
-}
-
-/* Projects Section */
+/* 💼 Projects Section */
 .projects {
     background-color: #fff;
     padding: 50px 0;
-    animation: fadeIn 2s ease-out; 
+    animation: fadeIn 2s ease-out;
 }
 
-/* Keyframe animation for the entire projects section */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Project Card Style */
 .project-card {
     background: #6C63FF;
     color: white;
@@ -102,27 +85,24 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for project card */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Links in project card */
 .project-links a {
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Add smooth animations for list items */
+/* 🌟 Features Animation */
 .feature-list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 10px;
 }
 
-/* Animation for each list item */
 .feature-list li {
     opacity: 0;
     transform: translateY(20px);
@@ -130,55 +110,18 @@ body {
     margin-bottom: 15px;
 }
 
-/* Stagger the animation of each list item */
-.feature-list li:nth-child(1) {
-    animation-delay: 0.1s;
+.feature-list li:nth-child(n) {
+    animation-delay: calc(0.1s * var(--i));
 }
 
-.feature-list li:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.feature-list li:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.feature-list li:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.feature-list li:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-/* Keyframe animation for fade-in effect on list items */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Optional: Add hover effect to the project card links */
-.project-card:hover .project-links a {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Ensure cards are consistent in height and spacing */
+/* 🎨 Skills Section */
 .skill-card {
     min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-}
-
-.skill-card .icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -187,36 +130,24 @@ body {
 }
 
 .card-title {
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
     font-weight: bold;
     color: #6C63FF;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover .card-title {
+    color: #FF5E78;
 }
 
 .card-text {
-    font-size: 1.1rem; /* Increased font size */
+    font-size: 1.1rem;
     color: #333;
 }
 
-.card-text strong {
-    font-weight: bold;
-}
-
-.skills h2 {
-    font-size: 3rem; /* Increased font size */
-    font-weight: bold;
-    color: #6C63FF;
-    margin-bottom: 30px;
-    animation: fadeInUp 1.5s ease-out;
-}
-
-/* Icon Styling */
-.icons {
-    margin-bottom: 20px;
-}
-
+/* 🌟 Icon Effects */
 .icons i {
-    margin: 0 15px;
     color: #6C63FF;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -226,22 +157,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Hover Effects */
-.skill-card:hover .card-title {
-    color: #FF5E78;
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
+/* 📞 Contact Section */
 .contact {
     background: #6C63FF;
     color: white;
@@ -257,29 +173,26 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #FF5E78;
+    transition: background-color 0.3s ease;
 }
 
 .contact a:hover {
     background-color: #6C63FF;
-    transition: background-color 0.3s ease;
 }
 
+/* 📸 Profile Image */
 .profile-img {
-    width: 180px; /* Increased image size */
-    height: 180px; /* Increased image size */
+    width: 180px;
+    height: 180px;
     border-radius: 80%;
     margin-bottom: 20px;
     animation: scaleIn 2s ease-out;
 }
 
-/* Keyframe Animations */
+/* 🌈 Keyframe Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
@@ -294,10 +207,20 @@ body {
 }
 
 @keyframes scaleIn {
-    from {
-        transform: scale(0);
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
-    to {
-        transform: scale(1);
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    .skill-card {
+        min-height: auto;
     }
 }
+
