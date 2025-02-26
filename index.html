@@ -4,197 +4,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yamini Shriwastav | Portfolio</title>
+
+    <!-- Bootstrap & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+<!-- 🌟 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Yamini</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assest/YaminiShriwastav _resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!-- 🌈 Hero Section -->
+<section id="home" class="hero d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="hero-title animated-text">Hello, I'm <span>Yamini Shriwastav</span> 👋</h1>
+        <p class="hero-subtitle">💻 Full-Stack Developer | 🚀 Passionate about Web Development & AI</p>
+        <a href="#about" class="btn btn-primary btn-lg me-3 animated-btn">About Me</a>
+        <a href="./assest/YaminiShriwastav _resume.pdf" download class="btn btn-outline-light btn-lg animated-btn">Download Resume</a>
+    </div>
+</section>
+
+
+<!-- 👩 About Section -->
+<section id="about" class="about">
     <div class="container">
-        <a class="navbar-brand" href="#">Yamini</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="./assest/Yamini  Resume.pdf" target="_blank">Resume</a></li>
-            </ul>
+        <div class="row align-items-center">
+            <!-- Profile Image with Hover Effect -->
+            <div class="col-md-6 text-center mb-4">
+                <img src="./img/my_img.png" alt="Profile Picture" class="profile-img">
+            </div>
+
+            <!-- About Text Content with Fade-in Animation -->
+            <div class="col-md-6">
+                <h2 class="section-title mb-3">About Me</h2>
+                <p class="about-description">
+                    I am a motivated IT student with a strong curiosity for technology. Passionate about AI tools for creative tasks and excited for tech opportunities. 🚀  
+                    <strong>Let's build something amazing together! ✨</strong>
+                <a href="#contact" class="btn btn-primary mt-3 animated-btn">Let's Connect 🚀</a>
+            </div>
         </div>
     </div>
-</nav>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container text-center">
-        <h1 class="hero-title">Hello, I'm <span>Yamini Shriwastav</span> 👋</h1>
-        <p class="hero-subtitle">Full-Stack Developer in the Making | 💡 Passionate about Web Development & AI</p>
-        <a href="#projects" class="btn btn-primary btn-lg hero-btn">View My Work</a>
-        <a href="./assest/Yamini  Resume.pdf" download class="btn btn-outline-light btn-lg hero-btn">Download Resume</a>
-    </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container text-center">
-        <h2>About Me</h2>
-        <img src="./img/my-img.png" alt="Yamini Shriwastav" class="profile-img">
-        <p>I am a motivated IT student with a strong curiosity for technology and its real-world applications. I have a keen interest in AI tools and their potential for creative and practical tasks. As I continue to gain experience, I am eager to learn, adapt, and develop my skills. I am excited to explore opportunities in the tech field.</p>
-    </div>
-</section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects">
+<!-- 🏗 Projects Section -->
+<section id="projects" class="projects py-5">
     <div class="container">
-        <h2 class="text-center">My Projects</h2>
-        <div class="row">
+        <h2 class="text-center mb-5 project-heading">
+            🚀 <span class="highlight-text">My Projects</span>
+        </h2>
+        
+        <div class="row g-4">
             <!-- 🎁 Kamyas - Gift Suggestion Project -->
             <div class="col-md-6">
-                <div class="project-card">
-                    <img src="./img/kamyas.PNG" alt="Kamyas - Gift Suggestion Platform" class="img-fluid mt-3">
-                    <h3>Kamyas - Gift Suggestion</h3>
-                    <p>A personalized gift recommendation platform.</p>
-                    <strong>Technologies:</strong> HTML, CSS, JavaScript, JSON Server, LocalStorage
-                    <ul>
-                        <li>✔ User authentication & account management 🔑</li>
-                        <li>✔ Dynamic product listings & categories 🛍️</li>
-                        <li>✔ Wishlist & cart management using localStorage 💖</li>
-                        <li>✔ Personalized gift suggestions based on user preferences 🎁</li>
-                        <li>✔ Admin dashboard for managing products & offers 📊</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://yaminishriwastav.github.io/kamyas-giftsuggestion-/" target="_blank" class="btn btn-light">Live Demo</a>
-                        <a href="https://github.com/Yaminishriwastav/kamyas-giftsuggestion-" target="_blank" class="btn btn-dark">GitHub Repo</a>
+                <div class="card project-card shadow-lg">
+                    <img src="./img/kamyas.PNG" class="card-img-top project-img" alt="Kamyas Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🎁 Kamyas - Gift Suggestion</h5>
+                        <p>A personalized gift recommendation platform.</p>
+                        <div class="project-details collapse" >
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, JSON Server.</p>
+                            <ul>
+                                <li>🔑 User authentication & account management</li>
+                                <li>🛍️ Dynamic product listings & categories</li>
+                                <li>💖 Wishlist & cart management using localStorage</li>
+                                <li>🎁 Personalized gift suggestions based on user preferences</li>
+                                <li>📊 Admin dashboard for managing products & offers</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary read-more-btn" data-bs-toggle="collapse" data-bs-target="#kamyas-details">
+                                + Read More
+                            </button>
+                            <a href="https://yaminishriwastav.github.io/kamyas-giftsuggestion-/" target="_blank" class="btn btn-outline-success">
+                                🔗 Live Demo
+                            </a>
+                            <a href="https://github.com/Yaminishriwastav/kamyas-giftsuggestion-" target="_blank" class="btn btn-outline-dark">
+                                💻 GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- 🩸 Blood Bond - Blood Management System -->
             <div class="col-md-6">
-                <div class="project-card">
-                    <img src="./img/blood-bond .png" alt="Blood Bond (Blood Donation & Management System)" class="img-fluid mt-3">
-                    <h3>Blood Bond</h3>
-                    <p>Blood Donation & Management System</p>
-                    <strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL
-                    <ul>
-                        <li>✔ Secure user authentication & account management 🔑</li>
-                        <li>✔ User-friendly registration forms for donors & recipients 📝</li>
-                        <li>✔ Real-time blood request tracking & updates 🩸</li>
-                        <li>✔ Admin dashboard for managing blood inventories & requests 📊</li>
-                        <li>✔ Responsive design ensuring smooth performance across devices 📱</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://youtu.be/hXpHOV8DSN4" target="_blank" class="btn btn-light">Demo Video</a>
-                        <a href="https://github.com/Yaminishriwastav/Blood-Bond-" target="_blank" class="btn btn-dark">GitHub Repo</a>
+                <div class="card project-card shadow-lg">
+                    <img src="./img/blood-bond .png" class="card-img-top project-img" alt="Blood Bond Project">
+                    <div class="card-body">
+                        <h5 class="card-title">🩸 Blood Bond - Blood Management System</h5>
+                        <p>Blood Donation & Management System.</p>
+                        <div class="project-details collapse">
+                            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL.</p>
+                            <ul>
+                                <li>🔑 Secure user authentication & account management</li>
+                                <li>📝 User-friendly registration for donors & recipients</li>
+                                <li>🩸 Real-time blood request tracking & updates</li>
+                                <li>📊 Admin dashboard for managing blood inventories</li>
+                                <li>📱 Fully responsive design for all devices</li>
+                            </ul>
+                            <p><strong>Key Contributions:</strong></p>
+                            <ul>
+                                <li>💡 Collaborated with a team to implement user-friendly forms.</li>
+                                <li>💻 Built responsive pages ensuring cross-device compatibility.</li>
+                                <li>🔄 Integrated PHP and MySQL for real-time request management.</li>
+                                <li>🐞 Assisted in testing and debugging for application stability.</li>
+                                <li>⚡ Optimized load times and user experience.</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary read-more-btn" data-bs-toggle="collapse" data-bs-target="#bloodbond-details">
+                                + Read More
+                            </button>
+                            <a href="https://youtu.be/hXpHOV8DSN4" target="_blank" class="btn btn-outline-success">
+                                🎥 Demo Video
+                            </a>
+                            <a href="https://github.com/Yaminishriwastav/Blood-Bond-" target="_blank" class="btn btn-outline-dark">
+                                💻 GitHub
+                            </a>
+                        </div>
                     </div>
-                    <p>
-                        <strong>Key Contributions:</strong>
-                        <ul>
-                            <li>💡 Collaborated with a team to implement user-friendly registration forms, enhancing the user interface.</li>
-                            <li>💻 Built responsive web pages using HTML5, CSS3, and Bootstrap to ensure compatibility across devices.</li>
-                            <li>🔄 Integrated PHP and MySQL for real-time blood request management and efficient database handling.</li>
-                            <li>🐞 Assisted in testing and debugging to ensure application reliability and stability.</li>
-                            <li>⚡ Optimized the web application for improved load times and user experience.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <!-- ✈️ Interactive Travel Journal -->
-            <div class="col-md-6">
-                <div class="project-card">
-                    <h3>Interactive Travel Journal ✈️ (Ongoing - Personal Project)</h3>
-                    <p>A feature-rich travel diary with:</p>
-                    <ul>
-                        <li>✔ Interactive Maps 🗺️</li>
-                        <li>✔ Multimedia Documentation 📸</li>
-                        <li>✔ Mood Tracking 😊</li>
-                        <li>✔ Trip Statistics & Insights 📊</li>
-                        <li>✔ Real-Time Collaboration 👥</li>
-                    </ul>
-                    <p><em>(Still in development, stay tuned!)</em></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-
-<!-- Skills Section -->
+<!-- 💡 Skills Section  -->
 <section id="skills" class="skills">
     <div class="container">
-        <h2 class="text-center mb-4">My Skills</h2>
-        <div class="row">
-            <!-- Frontend Development -->
-            <div class="col-md-4 mb-4">
+        <h2 class="text-center mb-5 section-title">🛠 My Skills</h2>
+        <div class="row g-5">
+            <!-- Row 1: Frontend & Backend -->
+            <div class="col-md-6">
                 <div class="card skill-card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Frontend Development</h5>
-                        <div class="icons">
-                            <i class="fab fa-html5 fa-3x"></i>
-                            <i class="fab fa-css3-alt fa-3x"></i>
-                            <i class="fab fa-js-square fa-3x"></i>
+                    <div class="card-body">
+                        <h5 class="mb-4">🎨 Frontend Development</h5>
+                        <div class="icons mb-4">
+                            <i class="fab fa-html5 text-danger"></i>
+                            <i class="fab fa-css3-alt text-primary"></i>
+                            <i class="fab fa-js-square text-warning"></i>
                         </div>
-                        <p class="card-text">
-                            <strong>working with:</strong> HTML, CSS, JavaScript
-                            <br>
-                            <strong>Currently learning:</strong> React, Chakra UI
-                        </p>
+                        <p><strong>Working with:</strong> HTML, CSS, JavaScript<br>Currently learning: React ⚛️, Chakra UI 🎨</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Backend Development -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-6">
                 <div class="card skill-card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Backend Development</h5>
-                        <div class="icons">
-                            <i class="fab fa-node fa-3x"></i>
-                            <i class="fas fa-server fa-3x"></i>
+                    <div class="card-body">
+                        <h5 class="mb-4">🛠 Backend Development</h5>
+                        <div class="icons mb-4">
+                            <i class="fab fa-node text-success"></i>
+                            <i class="fas fa-server text-secondary"></i>
                         </div>
-                        <p class="card-text">
-                            <strong> working with:</strong> Node.js, JSON Server, Glitch
-                        </p>
+                        <p><strong>Working with:</strong> Node.js 🟩, JSON Server, Glitch ⚡</p>
                     </div>
                 </div>
             </div>
 
-            <!-- API Integration -->
-            <div class="col-md-4 mb-4">
+            <!-- Row 2: API & UI -->
+            <div class="col-md-6">
                 <div class="card skill-card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">API Integration</h5>
-                        <div class="icons">
-                            <i class="fas fa-plug fa-3x"></i>
-                            <i class="fab fa-google fa-3x"></i>
-                            <i class="fab fa-unsplash fa-3x"></i>
+                    <div class="card-body">
+                        <h5 class="mb-4">🔗 API Integration</h5>
+                        <div class="icons mb-4">
+                            <i class="fas fa-plug text-info"></i>
+                            <i class="fab fa-google text-danger"></i>
+                            <i class="fab fa-unsplash text-warning"></i>
                         </div>
-                        <p class="card-text">
-                            <strong>Exploring:</strong> REST APIs, Google Maps API, Unsplash API
-                                                    </p>
+                        <p><strong>Exploring:</strong> REST APIs 🌐, Google Maps API 🗺️, Unsplash API 📸</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Web Animations & UI Enhancements -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-6">
                 <div class="card skill-card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Web Animations & UI Enhancements</h5>
-                        <div class="icons">
-                            <i class="fas fa-sparkles fa-3x"></i>
-                            <i class="fab fa-react fa-3x"></i>
+                    <div class="card-body">
+                        <h5 class="mb-4">✨ UI & Animations</h5>
+                        <div class="icons mb-4">
+                            <i class="fas fa-magic text-purple"></i>
+                            <i class="fab fa-react text-info"></i>
                         </div>
-                        <p class="card-text">
-                            <strong>Currently exploring:</strong> CSS Animations, Scroll Effects, UI Libraries (Framer Motion)
-                        </p>
+                        <p><strong>Exploring:</strong> CSS Animations 🎞️, Scroll Effects, Framer Motion 💫</p>
                     </div>
                 </div>
             </div>
@@ -202,19 +227,65 @@
     </div>
 </section>
 
-
-<!-- Contact Section -->
+<!-- 📬 Contact Section -->
 <section id="contact" class="contact">
-    <div class="container text-center">
-        <h2>Contact Me</h2>
-        <p>Email: yaminishriwastav2002@gmail.com</p>
-        <a href="https://www.linkedin.com/in/yamini-shriwastav-/" target="_blank" class="btn btn-light">LinkedIn</a>
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Get In Touch ✉️</h2>
+        <div class="row justify-content-center">
+            <!-- Contact Card -->
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <i class="fas fa-phone-alt fa-3x contact-icon"></i>
+                    <h5 class="mt-3">Phone</h5>
+                    <p><a href="tel:788972215">+91 7889872215</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <i class="fas fa-envelope fa-3x contact-icon"></i>
+                    <h5 class="mt-3">Email</h5>
+                    <p><a href="mailto:yaminishriwastav@gmail.com">yaminishriwastav2002@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="contact-card text-center">
+                    <i class="fab fa-linkedin fa-3x contact-icon"></i>
+                    <h5 class="mt-3">LinkedIn</h5>
+                    <p><a href=" https://www.linkedin.com/in/yamini-shriwastav-" target="_blank">
+                        linkedin.com/in/yamini-shriwastav-
+                    </a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+<!-- 🌙 Footer Section -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-2">🌟 Made with ❤️ by <strong>Yamini Shriwastav</strong></p>
+        <div class="social-links mb-3">
+            <a href="https://www.linkedin.com/in/yamini-shriwastav-" target="_blank" class="text-white me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/Yaminishriwastav" target="_blank" class="text-white me-3">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:yaminishriwastav2002@gmail.com" class="text-white">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        
+        <button onclick="scrollToTop()" class="btn btn-outline-light scroll-top-btn">
+            🔝 Back to Top
+        </button>
+    </div>
+</footer>
 
-<!-- Bootstrap & JS -->
+
+<script src="./script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>

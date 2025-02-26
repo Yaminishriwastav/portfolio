@@ -1,14 +1,8 @@
-// Hamburger Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const menu = document.querySelector('.menu');
-
-hamburger.addEventListener('click', function () {
-    const hamIcon = this.querySelector('.hamburger-icon');
-    const crossIcon = this.querySelector('.cross-icon');
-    
-    // Toggle display of icons and menu
-    hamIcon.classList.toggle('hidden');
-    crossIcon.classList.toggle('hidden');
-    menu.classList.toggle('show-menu');
+// 🎯 Toggle "Read More" in Project Section
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+        const details = this.parentElement.previousElementSibling;
+        details.classList.toggle('show');
+        this.textContent = details.classList.contains('show') ? '- Read Less' : '+ Read More';
+    });
 });
-
